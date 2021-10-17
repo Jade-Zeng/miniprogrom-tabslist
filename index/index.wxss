@@ -1,0 +1,57 @@
+page {
+  overflow: hidden;
+}
+.intro {
+  margin: 20rpx;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.top {
+  display: flex;
+  height: 80rpx;
+  text-align: center;
+}
+.tab {
+  width: 200rpx;
+  height: 50rpx;
+  margin-right: 20rpx;
+  border-radius: 8rpx;
+  border: 2rpx solid #000;
+}
+.active {
+  background: #000;
+  color: #fff;
+}
+.content {
+  position: relative;
+  contain: 900rpx;
+  overflow: hidden;
+  margin-top: 20rpx;
+  border-top: 2rpx solid #ccc;
+}
+.tabs-list {
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.contain {
+}
+.item {
+  padding: 100rpx;
+  border-bottom: 2rpx solid #ccc;
+}
+.hidden {
+  display: none;
+}
+.test {
+  padding: 400rpx 0;
+  border-bottom: 2rpx solid #ccc;
+}
+.list {
+  height: 900rpx;
+  overflow: auto;
+}
+.scrollview {
+  height: 900rpx;
+}

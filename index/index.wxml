@@ -1,0 +1,16 @@
+<view class="intro">
+    <view class="top">
+        <view class="tab {{active === item.id ? 'active' : ''}}" wx:for="{{tabs}}" wx:key="index" data-id="{{item.id}}" bindtap="change">{{item.name}}</view>
+    </view>
+    <view class="content">
+        <view wx:for="{{tabs}}" wx:key="index" id="{{index}}" class="list {{ index === active ? '' : 'hidden'}}">
+            <view class="contain">
+                <scroll-view scroll-y bindscrolltolower="load" class="scrollview">
+                    <view wx:for="{{list[index]}}" wx:for-item="k1" wx:key="index">
+                        <view wx:for="{{k1}}" wx:for-item="k2" wx:key="index" class="item">{{k2.fact}}</view>
+                    </view>
+                </scroll-view>
+            </view>
+        </view>
+    </view>
+</view>
